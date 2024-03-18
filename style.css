@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7fZoNxiz4pA3q-R9KvUD1M6ibdhxC0TLvA&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.logo {
+  color: white;
+  cursor: pointer;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+span {
+  color: #f3c02a;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px 30px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #f3c02a;
+  transition: 0.4s;
+}
+.btn {
+  background-color: #f3c02a;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid transparent;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.4s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+.content1 {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+}
+.content1 img {
+  border-radius: 50%;
+  width: 400px;
+}
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 60px;
+}
+h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+h4 {
+  color: #585c63;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.newslatter form {
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+.newslatter form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #f3c02a;
+  border-radius: 30px;
+  outline: none;
+}
+.newslatter form input:last-child {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #f3c02a;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #868686;
+  top: 6px;
+  right: 6px;
+}
+.share {
+  position: absolute;
+  top: 90%;
+  left: 8%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.share p {
+  font-size: 17px;
+  color: white;
+  margin-right: 60px;
+}
+.share .social a {
+  display: inline-block;
+  color: white;
+  margin-right: 15px;
+  transform: transition 0.4s;
+}
+.share .social a:hover {
+  transform: scale(1.2);
+}
+
+.skills {
+  position: absolute;
+  top: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.skills .social a {
+  display: inline-block;
+  color: white;
+  margin-right: 10px;
+  transform: transition 0.4s;
+}
+.skills .social a i {
+  font-size: xx-large;
+}
+.skills .social a:hover {
+  transform: scale(1.2);
+}
+
+#fiverr {
+  width: 14px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%)
+    hue-rotate(263deg) brightness(109%) contrast(102%);
+}
+
+@media (max-width: 950px) {
+  nav .logo {
+    font-size: 30px;
+  }
+  nav ul li {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .content h1 {
+    font-size: 50px;
+  }
+  .content h3 {
+    font-size: 20px;
+  }
+  .content h4 {
+    font-size: 15px;
+  }
+}
