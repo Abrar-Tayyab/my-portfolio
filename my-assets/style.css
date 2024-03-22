@@ -8,14 +8,19 @@
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
 }
-.hero {
-  height: 100vh;
+.section{
   width: 100%;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7fZoNxiz4pA3q-R9KvUD1M6ibdhxC0TLvA&usqp=CAU");
+  background-color: #31333B;
   background-size: cover;
   background-position: center;
 }
-
+.hero {
+  width: 100%;
+  background-color: #232429;
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7fZoNxiz4pA3q-R9KvUD1M6ibdhxC0TLvA&usqp=CAU"); */
+  background-size: cover;
+  background-position: center;
+}
 nav {
   display: flex;
   align-items: center;
@@ -46,7 +51,7 @@ nav ul li a:hover {
   color: #f3c02a;
   transition: 0.4s;
 }
-.btn {
+.hero .btn {
   background-color: #f3c02a;
   color: white;
   text-decoration: none;
@@ -56,7 +61,7 @@ nav ul li a:hover {
   border-radius: 30px;
   transition: transform 0.4s;
 }
-.btn:hover {
+.hero .btn:hover {
   transform: scale(1.1);
 }
 .content {
@@ -75,17 +80,18 @@ nav ul li a:hover {
   border-radius: 50%;
   width: 400px;
 }
-h1 {
+h1,h3,h4 {
   color: white;
+}
+.content h1 {
   margin: 20px 0px 20px;
   font-size: 60px;
 }
-h3 {
-  color: white;
+.content h3 {
   font-size: 25px;
   margin-bottom: 50px;
 }
-h4 {
+.content h4 {
   color: #585c63;
   font-size: 20px;
   letter-spacing: 2px;
@@ -142,7 +148,7 @@ h4 {
 }
 
 .skills {
-  position: absolute;
+  /* position: absolute; */
   top: 90%;
   display: flex;
   flex-wrap: nowrap;
@@ -166,6 +172,55 @@ h4 {
   width: 14px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%)
     hue-rotate(263deg) brightness(109%) contrast(102%);
+}
+.aboutus h1 {
+  font-size: 60px;
+}
+
+h4.separator::before {
+    content: '';
+    display: inline-block;
+    width: 6em;
+    height: 3px;
+    background-color: #f3c02a;
+    margin-right: 0.5em;
+}
+
+.skillsSection h1 {
+  font-size: 60px;
+}
+.skillsSection img{
+  align-self: center;
+}
+.skillsSection .card{
+  border-radius: 20px;
+  background-color: #0e0e0e61;
+}
+
+.contactSection{
+  width: 100%;
+  background-color: #232429;
+  background-size: cover;
+  background-position: center;
+  border-top: #f3c02a 3px solid;
+}
+
+.contactSection .card{
+  background-color: #31333B;
+  border-radius: 15px;
+}
+
+.contactSection h1 {
+  font-size: 60px;
+}
+
+footer{
+  border-top: #f3c02a 3px solid;
+  color: white;
+}
+
+.footer h1 {
+  font-size: 60px;
 }
 
 @media (max-width: 950px) {
