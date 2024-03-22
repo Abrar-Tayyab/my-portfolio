@@ -223,6 +223,16 @@ footer{
   font-size: 60px;
 }
 
+footer a {
+  display: inline-block;
+  color: white;
+  transform: transition 0.4s;
+}
+footer a:hover {
+  transform: scale(1.2);
+  color: #f3c02a;
+}
+
 @media (max-width: 950px) {
   nav .logo {
     font-size: 30px;
